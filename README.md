@@ -1,3 +1,3 @@
-# Zenn CLI
+# jnchito-zenn-docs
 
-* [📘 How to use](https://zenn.dev/zenn/articles/zenn-cli-guide)
+伊藤淳一（[@jnchito](https://zenn.dev/jnchito)）のZenn.dev記事を管理するGitHubリポジトリです。
