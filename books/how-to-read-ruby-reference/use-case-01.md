@@ -37,6 +37,18 @@ https://docs.ruby-lang.org/ja/latest/method/String/i/length.html
 
 なお、`length`メソッドのページになぜ`size`メソッドが載っているのかというと、これはエイリアスメソッドの関係にあるからです。つまり、どちらのメソッドを使っても同じ結果が返ってくることを意味します。
 
+### 参考：Rubyの代表的な組み込みクラス
+
+Rubyプログラミングでよく使われる、代表的な組み込みクラスは以下のとおりです。
+
+- String = 文字列（`"alice"`、`"bob"`など）
+- Integer = 整数（1, 2, 3など）
+- Float = 浮動小数点数（0.1, 1.2など）
+- Numeric = 数値全般（IntegerやFloatなどのスーパークラス）
+- Array = 配列（`[1, 2, 3]`など）
+- Hash = ハッシュ（`{a: 1, b: 2, c: 3}`など）
+- Symbol = シンボル（`:success`、`:error`など）
+
 ## メソッドの説明文とサンプルコードを理解する
 
 これは見て明らかだと思いますが、以下の赤枠部分はメソッドの説明文とサンプルコードになっています。
@@ -174,7 +186,6 @@ require 'csv'
 [1, 2, 3].to_csv #=> "1,2,3\n"
 ```
 
-
 ## 可変長引数を持つメソッドの場合
 
 以下は可変長引数を持つメソッドの表示例です（`Kernel.#p`メソッド）。
@@ -188,6 +199,30 @@ https://docs.ruby-lang.org/ja/latest/method/Kernel/m/p.html
 また、ここでは戻り値が`object | Array`となっています。`|`は「または」を意味する記号で、この場合は「なんらかのオブジェクトまたは配列」を意味します。上のスクリーンショットには含まれていませんが、このメソッドの戻り値はリファレンス上、次のように説明されています。
 
 > 指定された引数 arg を返します。複数の引数が指定された場合はそれらを要素とする配列を返します。
+
+## 戻り値が不定であるメソッドの場合
+
+以下は戻り値が不定であるメソッドの表示例です（`Kernel.#exit`メソッド）。
+
+https://docs.ruby-lang.org/ja/latest/method/Kernel/m/exit.html
+
+![](https://storage.googleapis.com/zenn-user-upload/f2fa5d636fa33a42cb459999.png =500x)
+
+戻り値が不定である場合は`-> ()`と表記されます。`exit`メソッドはRubyプログラムの実行を終了する特殊なメソッドであるため、戻り値が不定となります。
+
+## 演算子のように見えるメソッドの場合
+
+Rubyは一見、演算子のように見えて実はメソッドとして実装されているものがたくさんあります。たとえば、配列の要素を参照するときに使う`[]`もメソッドです（`Array#[]`メソッド）。
+
+https://docs.ruby-lang.org/ja/latest/method/Array/i/=5b=5d.html
+
+![](https://storage.googleapis.com/zenn-user-upload/da65722c075924a0a7b31c84.png =500x)
+
+数値の四則演算で使用する`+`もメソッドです（`Integer#+`メソッド）。
+
+![](https://storage.googleapis.com/zenn-user-upload/a9b06403b2311b17cfa75401.png =500x)
+
+このため、公式リファレンスを読むことで`a[0]`や`1 + 2`といった、ふだん何気なく使っている演算子の詳細な仕様を理解することができます。
 
 ## クラスメソッド（特異メソッド）の場合
 
@@ -205,7 +240,7 @@ https://docs.ruby-lang.org/ja/latest/method/Regexp/s/escape.html
 
 ## モジュール関数の場合
 
-モジュール関数は「(クラス名).#(メソッド名)」の形式で表記されます。先ほど紹介した`p`メソッドもモジュール関数です。
+モジュール関数は「(クラス名).#(メソッド名)」の形式で表記されます。先ほど紹介した`p`メソッドや`exit`メソッドもモジュール関数です。
 
 https://docs.ruby-lang.org/ja/latest/method/Kernel/m/p.html
 
