@@ -8,7 +8,7 @@ https://docs.ruby-lang.org/ja/latest/doc/index.html
 
 ![](https://storage.googleapis.com/zenn-user-upload/167929c31b8bca72666dd1a9.png =500x)
 
-## コラム：docs.ruby-lang.org の構成を知る
+## コラム：docs.ruby-lang.org のページ構成を知る
 
 docs.ruby-lang.org のトップページを開くと、英語版と日本語版の公式リファレンスのリンクが表示されます。
 
@@ -22,7 +22,7 @@ https://docs.ruby-lang.org/ja/
 
 ![](https://storage.googleapis.com/zenn-user-upload/51669a4fe9537c5560f8d6c3.png =500x)
 
-バージョンをクリックするとそのバージョンの公式リファレンスが表示されます（以下はRuby 2.7のリンクをクリックした場合）。
+バージョンをクリックすると、そのバージョンの公式リファレンスが表示されます（以下はRuby 2.7のリンクをクリックした場合の表示例です）。
 
 https://docs.ruby-lang.org/ja/2.7.0/doc/index.html
 

@@ -10,6 +10,8 @@ https://docs.ruby-lang.org/ja/latest/class/Array.html
 
 ![](https://storage.googleapis.com/zenn-user-upload/cc867a2bd705c70148e220fe.png =500x)
 
+本章ではこのページ例として、クラスの説明ページの読み方を説明します。
+
 ## クラスの継承関係を理解する
 
 クラスの説明ページには継承リストが載っています。
@@ -18,7 +20,7 @@ https://docs.ruby-lang.org/ja/latest/class/Array.html
 
 ここではArrayクラスが、Enumerableモジュールと、Objectクラスと、Kernelモジュールと、BasicObjectクラスを継承、またはincludeしていることがわかります。つまり、ArrayクラスではArrayクラス本体に定義されたメソッドだけではなく、これらのクラスやモジュールに定義されたメソッドを使用することができます。目的のメソッドがこのページに載っていない場合は、継承関係にある他のクラスやモジュールの説明ページを開くとそのメソッドが見つかるかもしれません。
 
-また、 "dynamic include: JSON::Generator::GeneratorMethods::Object (by json)" の部分は、jsonライブラリをrequireすることで、  JSON::Generator::GeneratorMethods::Object モジュールに定義されたメソッド（`to_json`メソッド）がArrayクラスで使えるようになることを意味します。
+また、 "dynamic include: JSON::Generator::GeneratorMethods::Object (by json)" の部分は、jsonライブラリをrequireすることで、  JSON::Generator::GeneratorMethods::Object モジュールに定義されたメソッド（ここでは`to_json`メソッド）がArrayクラスで使えるようになることを意味します。
 
 ```ruby 
 require 'json'
@@ -37,16 +39,21 @@ require 'json'
 
 「目次」の欄ではそのクラスで使用可能なメソッドの一覧が載っています。
 
+![](https://storage.googleapis.com/zenn-user-upload/6ba1f14c5c33965c011e3f14.jpg =500x)
+
 そのクラスのインスタンスメソッドだけでなく、特異メソッド（クラスメソッド）やincludeされているモジュールによって定義されるメソッドの一覧も載っています。
 
-![](https://storage.googleapis.com/zenn-user-upload/6ba1f14c5c33965c011e3f14.jpg =500x)
 ![](https://storage.googleapis.com/zenn-user-upload/c1bed942cf7fe2320f82bfa7.jpg =500x)
+
+うろ覚えしているメソッドを探すときや、メソッド名から使いたい機能を類推したいときにメソッド一覧を眺めると、目的のメソッドが見つかる場合があります。
 
 ## 各メソッドの説明を読む
 
-ページをそのまま下にスクロールしていくと、各メソッドの説明が始まります。メソッド名やメソッドの説明文を読んで、自分の探しているメソッドを探していきましょう。
+ページをそのまま下にスクロールしていくと、各メソッドの説明が始まります。メソッドの説明文やサンプルコードを読んで、自分の探しているメソッドかどうかを確認しましょう。
 
 ![](https://storage.googleapis.com/zenn-user-upload/20abf1f45ac35ee99a5e30f4.jpg =500x)
+
+## permalinkで目的のメソッドのURLをシェアする
 
 なお、"permalink"のリンクをクリックすると、対象のメソッドだけを説明しているページに遷移できます。他の人に「このメソッドなんだけど」と伝えたいときは、"permalink"で表示されるURLをシェアすると便利です。
 
