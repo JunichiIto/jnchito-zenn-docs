@@ -93,7 +93,7 @@ https://docs.ruby-lang.org/ja/latest/method/Integer/i/inspect.html
 
 なお、"[RETURN]"は戻り値の説明で、"[EXCEPTION] ArgumentError:"はこのメソッドを呼びだしたときに発生しうる例外クラスの名前とその発生条件です。
 
-## ブロックを受け取るメソッドの場合
+## ブロックを受け取るメソッドの場合（パターン1）
 
 以下はブロックを受け取るメソッドの表示例です（`Array#each`メソッド）。
 
@@ -104,6 +104,18 @@ https://docs.ruby-lang.org/ja/latest/method/Array/i/each.html
 `each {|item| .... } -> self` の `{|item| .... }` の部分がブロックを受け取ることを意味しています。また、戻り値の`self`はレシーバ自身（ここであればメソッドを呼びだした配列そのもの）が返ることを意味します。
 
 さらに、ここでは`each -> Enumerator`という表記もあります。これは「ブロックを与えなかった場合はEnumeratorオブジェクトが返る」ということを意味します（つまり、`each`メソッドはブロックを与えずに呼び出すことも可能）。
+
+## ブロックを受け取るメソッドの場合（パターン2）
+
+ブロックを受け取るメソッドは次のように書かれる場合もあります（`Syslog::Logger#info`メソッド）。
+
+https://docs.ruby-lang.org/ja/latest/method/Syslog=3a=3aLogger/i/info.html
+
+![](https://storage.googleapis.com/zenn-user-upload/28d17c3264c0d25901f69db5.png =500x)
+
+`&block`や`&b`など、`&`が手前に付く引数はブロックを受け取ることを意味します。また、戻り値の`true`はその名のとおり、常に`true`が返ることを意味します。
+
+なお、ここでは"Syslog::Logger"のように、クラス名が`::`で連結されています。これはSyslogというモジュールにLoggerクラスが定義されていることを意味します。Rubyでは、あるクラスやモジュールの内部にクラスやモジュール、定数が定義されている場合は「(外側のクラス名やモジュール名)::(内側のクラス名やモジュール名や定数名)」と表記します。
 
 ## 呼び出し方が複数あるメソッドの場合
 
@@ -142,6 +154,26 @@ https://docs.ruby-lang.org/ja/latest/method/String/i/lines.html
 なお、第1引数の`rs`のデフォルト値である[`$/`](https://docs.ruby-lang.org/ja/latest/class/Kernel.html#V_--2D0)はRubyの特殊変数で、入力レコード区切りを表す文字列のことです（奇妙な見た目ですが、これはRubyで最初から用意されている変数なんです！）。第1引数を指定しなかった場合はこの特殊変数の値が第1引数として使われます。
 
 また、戻り値の`[String]`は「各要素が文字列（Stringオブジェクト）の配列」を意味しています。このように、配列が戻り値になる場合は`[(クラス名)]`の形式で記述され、「各要素が（クラス名）の配列」という意味になります。
+
+## 任意のキーワード引数を受け取るメソッドの場合
+
+以下は任意のキーワード引数を受け取るメソッドの表示例です（`Array#to_csv`メソッド）。
+
+https://docs.ruby-lang.org/ja/latest/method/Array/i/to_csv.html
+
+![](https://storage.googleapis.com/zenn-user-upload/59b9dad66e92b3b765b75ae1.png =500x)
+
+任意のキーワード引数を指定できる場合は`**options`のように、`**`が引数の手前に付きます。ただし、任意といっても実際には指定可能なキーワードはメソッド側で決められていることが多いです。上の表示例でも引数の説明に「CSV.generate_line と同様のオプションを指定します」と書いてあります。
+
+なお、上の表示例では赤枠の下に"[added by csv]"という文字が見えますが、これは`Array#to_csv`メソッドがcsvライブラリによって追加されることを意味します。
+
+```ruby
+require 'csv'
+
+# csvライブラリをrequireすると、配列でto_csvメソッドが使えるようになる
+[1, 2, 3].to_csv #=> "1,2,3\n"
+```
+
 
 ## 可変長引数を持つメソッドの場合
 
