@@ -105,16 +105,6 @@ https://docs.ruby-lang.org/ja/latest/method/Integer/i/inspect.html
 
 なお、"[RETURN]"は戻り値の説明で、"[EXCEPTION] ArgumentError:"はこのメソッドを呼びだしたときに発生しうる例外クラスの名前とその発生条件です。
 
-## 引数のデフォルト値が動的に決まるメソッドの場合
-
-引数のデフォルト値は静的な値だけでなく、動的な値にすることもできます。その場合、リファレンスには動的な値を生成するための式が書かれます。以下は動的にデフォルト値が決まるメソッドの表示例です（`Array#permutation`メソッド）。
-
-https://docs.ruby-lang.org/ja/latest/method/Array/i/permutation.html
-
-![](https://storage.googleapis.com/zenn-user-upload/0ead3f553c932ab657bfe4b6.png =500x)
-
-`(n = self.length)`となっているので、この場合、引数`n`のデフォルト値はメソッドが呼び出された配列自身の要素数（`self.length`）になることがわかります。
-
 ## ブロックを受け取るメソッドの場合（パターン1）
 
 以下はブロックを受け取るメソッドの表示例です（`Array#each`メソッド）。
@@ -162,6 +152,16 @@ https://docs.ruby-lang.org/ja/latest/method/Array/i/all=3f.html
 - 引数を1つ与えたケースを意味します。
 
 それぞれのケースが具体的にどういう挙動を示すのかは説明文やサンプルコードで説明されています。
+
+## 引数のデフォルト値が動的に決まるメソッドの場合
+
+引数のデフォルト値は静的な値だけでなく、動的な値にすることもできます。その場合、リファレンスには動的な値を生成するための式が書かれます。以下は動的にデフォルト値が決まるメソッドの表示例です（`Array#permutation`メソッド）。
+
+https://docs.ruby-lang.org/ja/latest/method/Array/i/permutation.html
+
+![](https://storage.googleapis.com/zenn-user-upload/0ead3f553c932ab657bfe4b6.png =500x)
+
+`(n = self.length)`となっているので、この場合、引数`n`のデフォルト値はメソッドが呼び出された配列自身の要素数（`self.length`）になることがわかります。
 
 ## キーワード引数を持つメソッドの場合
 
