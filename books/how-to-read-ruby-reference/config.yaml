@@ -2,8 +2,7 @@ title: "Rubyの公式リファレンスが読めるようになる本"
 summary: "つよつよエンジニアからは「ネットの技術記事より公式リファレンスを読め！」って言われるけど、公式リファレンスを見ても変な記号や英語がたくさん出てきて全然意味がわからない・・・という初心者Rubyプログラマのみなさんに向けて、公式リファレンスの読み方を丁寧に解説します。"
 topics: ["rails", "ruby", "リファレンス", "るりま"]
 published: false
-price: 0 # 有料の場合200〜5000
-# 本に含めるチャプターを順番に並べましょう
+price: 0
 chapters:
   - introduction
   - use-case-01
@@ -13,3 +12,5 @@ chapters:
   - use-case-05
   - use-case-06
   - use-case-07
+  - appendix
+  - changelog
