@@ -69,8 +69,9 @@ https://docs.ruby-lang.org/ja/latest/class/Object.html
 
 ![](https://storage.googleapis.com/zenn-user-upload/69689ce0d62017adbc59a3d3.png =500x)
 
-Kernelモジュールではモジュール関数の一覧が載っています。
+Kernelモジュールではモジュール関数や特殊変数の一覧が載っています。
 
 https://docs.ruby-lang.org/ja/latest/class/Kernel.html
 
 ![](https://storage.googleapis.com/zenn-user-upload/8523b185177a06e01c733c65.jpg =500x)
+![](https://storage.googleapis.com/zenn-user-upload/7d64beb500e283afca2269d5.png =500x)
