@@ -10,7 +10,7 @@ https://docs.ruby-lang.org/ja/latest/class/Array.html
 
 ![](https://storage.googleapis.com/zenn-user-upload/cc867a2bd705c70148e220fe.png =500x)
 
-本章ではこのページ例として、クラスの説明ページの読み方を説明します。
+本章ではこのページを例として、クラスの説明ページの読み方を説明します。
 
 ## クラスの継承関係を理解する
 
