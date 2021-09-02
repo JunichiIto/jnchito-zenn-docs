@@ -230,7 +230,7 @@ Rubyは一見、演算子のように見えて実はメソッドとして実装�
 
 https://docs.ruby-lang.org/ja/latest/method/Array/i/=5b=5d.html
 
-![](https://storage.googleapis.com/zenn-user-upload/da65722c075924a0a7b31c84.png =500x)
+![](https://storage.googleapis.com/zenn-user-upload/9af333d605e1df91241e243c.png =500x)
 
 数値の四則演算で使用する`+`もメソッドです（`Integer#+`メソッド）。
 
