@@ -159,13 +159,15 @@ https://docs.ruby-lang.org/ja/latest/method/Array/i/all=3f.html
 
 ## !付きの「危険バージョン」を持つメソッドの場合
 
-Rubyのメソッドにはメソッド名の末尾に`!`が付くメソッドがあります。「`!`が付くメソッドは、`!`が付かない同名メソッドよりも危険なので、使うときは要注意」という意味を持ちます。。以下は`!`付きのメソッドと、`!`が付かないメソッドが併記されている例です（`Array#reverse`メソッドと、`reverse!`メソッド）。
+Rubyのメソッドにはメソッド名の末尾に`!`が付くメソッドがあります。`!`が付くメソッドは`!`が付かない同名メソッドよりも危険なので使うときは要注意、という意味を持ちます。以下は`!`付きのメソッドと、`!`が付かないメソッドが併記されている例です（`Array#reverse`メソッドと、`reverse!`メソッド）。
 
 ![](https://storage.googleapis.com/zenn-user-upload/eae72946566cb517ff70b722.png =500x)
 
 `!`付きのメソッドはメソッドを呼び出した配列自身の内容を破壊的に変更するため、「使うときは注意せよ」の意味で`!`が付いています。
 
 なお、メソッドによっては`!`付きのメソッドと、`!`が付かないメソッドが別々のページに説明されていることもあります。たとえば以下の`String#upcase!`メソッドでは、`!`が付かない`upcase`メソッドは"[SEE_ALSO]]"の欄にリンクされています。
+
+https://docs.ruby-lang.org/ja/latest/method/String/i/upcase=21.html
 
 ![](https://storage.googleapis.com/zenn-user-upload/992471da935366afec7572f6.png =500x)
 
