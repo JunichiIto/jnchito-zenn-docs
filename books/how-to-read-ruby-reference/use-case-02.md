@@ -18,6 +18,8 @@ https://docs.ruby-lang.org/ja/latest/class/Array.html
 
 ![](https://storage.googleapis.com/zenn-user-upload/7bd438ecffbacf4ef1c5bcc9.png =500x)
 
+「（クラスA）&lt;（クラスB または モジュールB）」は「クラスAがクラスBを継承していること」もしくは「クラスAがモジュールBをincludeしていること」を表します。
+
 ここではArrayクラスが、Enumerableモジュールと、Objectクラスと、Kernelモジュールと、BasicObjectクラスを継承、またはincludeしていることがわかります。つまり、ArrayクラスではArrayクラス本体に定義されたメソッドだけではなく、これらのクラスやモジュールに定義されたメソッドを使用することができます。目的のメソッドがこのページに載っていない場合は、継承関係にある他のクラスやモジュールの説明ページを開くとそのメソッドが見つかるかもしれません。
 
 また、 "dynamic include: JSON::Generator::GeneratorMethods::Object (by json)" の部分は、jsonライブラリをrequireすることで、  JSON::Generator::GeneratorMethods::Object モジュールに定義されたメソッド（ここでは`to_json`メソッド）がArrayクラスで使えるようになることを意味します。
