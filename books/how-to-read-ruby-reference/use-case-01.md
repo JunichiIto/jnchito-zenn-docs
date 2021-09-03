@@ -2,7 +2,7 @@
 title: "ユースケースその1：ググって公式リファレンスにたどり着いた場合"
 ---
 
-たとえば、「ruby string size」というキーワードでググった結果、以下のページにたどり着いたとします。
+たとえば、「ruby string length」というキーワードでググった結果、以下のページにたどり着いたとします。
 
 https://docs.ruby-lang.org/ja/latest/method/String/i/length.html
 
