@@ -43,7 +43,7 @@ https://docs.ruby-lang.org/ja/latest/method/String/i/length.html
 
 Rubyプログラミングでよく使われる、代表的な組み込みクラスは以下のとおりです。
 
-- String = 文字列（`"alice"`、`"bob"`など）
+- String = 文字列（`"apple"`、`"melon"`など）
 - Integer = 整数（1, 2, 3など）
 - Float = 浮動小数点数（0.1, 1.2など）
 - Numeric = 数値全般（IntegerやFloatなどのスーパークラス）
@@ -165,7 +165,7 @@ Rubyのメソッドにはメソッド名の末尾に`!`が付くメソッドが�
 
 `!`付きのメソッドはメソッドを呼び出した配列自身の内容を破壊的に変更するため、「使うときは注意せよ」の意味で`!`が付いています。
 
-なお、メソッドによっては`!`付きのメソッドと、`!`が付かないメソッドが別々のページに説明されていることもあります。たとえば以下の`String#upcase!`メソッドでは、`!`が付かない`upcase`メソッドは"[SEE_ALSO]]"の欄にリンクされています。
+なお、メソッドによっては`!`付きのメソッドと、`!`が付かないメソッドが別々のページに説明されていることもあります。たとえば以下の`String#upcase!`メソッドでは、`!`が付かない`upcase`メソッドは"[SEE_ALSO]"の欄にリンクされています。
 
 https://docs.ruby-lang.org/ja/latest/method/String/i/upcase=21.html
 
