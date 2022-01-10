@@ -12,7 +12,7 @@ https://docs.ruby-lang.org/ja/latest/method/String/i/length.html
 
 ## URLとバージョンの関係を知る
 
-このページのURLは https://docs.ruby-lang.org/ja/latest/method/String/i/length.html です。このURLの"latest"の文字に注目してください。"latest"は「最新」という意味です。つまり、このURLは現時点におけるRubyの最新バージョンを対象に説明したページであることを意味します。そのため、URLは同じでも開いたタイミングによって説明しているバージョンが変わります。たとえば、この記事を書いている時点ではRuby 3.0が最新バージョンなので、ページの左上には"Ruby 3.0.0"と書いてあります。
+このページのURLは https://docs.ruby-lang.org/ja/latest/method/String/i/length.html です。このURLの"latest"の文字に注目してください。"latest"は「最新」という意味です。つまり、このURLは現時点におけるRubyの最新バージョンを対象に説明したページであることを意味します。そのため、URLは同じでも開いたタイミングによって説明しているバージョンが変わります。たとえば、この記事を書いている時点ではRuby 3.0が最新バージョンなので、ページの左上には"Ruby 3.0.0"と書いてあります（注：その後のアップデートでこの表記は"Ruby 3.0"に変わりました）。
 
 ![](https://storage.googleapis.com/zenn-user-upload/0d9e712cebb121ffd704acd5.png =500x)
 
