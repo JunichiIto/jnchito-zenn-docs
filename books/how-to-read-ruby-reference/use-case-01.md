@@ -21,6 +21,11 @@ https://docs.ruby-lang.org/ja/latest/method/String/i/length.html
 - Ruby 2.7 = https://docs.ruby-lang.org/ja/2.7.0/method/String/i/length.html
 - Ruby 2.6 = https://docs.ruby-lang.org/ja/2.6.0/method/String/i/length.html
 
+Ruby 3.0以降ではURLが"3.0.0"ではなく、"3.0"のようにマイナーバージョンまでになっています。
+
+- Ruby 3.0 = https://docs.ruby-lang.org/ja/3.0/method/String/i/length.html
+- Ruby 3.1 = https://docs.ruby-lang.org/ja/3.1/method/String/i/length.html
+
 たまにバージョンによって仕様が異なる場合があるため、なるべく自分が使っているRubyのバージョンのリファレンスを見るにしましょう。
 
 ## "String#length"の意味は？
